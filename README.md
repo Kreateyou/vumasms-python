@@ -2,11 +2,12 @@
 VumaSMS REST API client for Python. API support for bulk SMS, Numbers, Verify (2FA) and more.
 
 # installation
+```
 pip install vumasms
+```
 
 Create a test.py script and in it add the following
-
-``
+```
 from vumasms.VumaSMS import VumaSMS
 API_TOKEN = "<from vuma portal>";
 API_SECRET = "<from vuma portal>"
@@ -19,3 +20,4 @@ SMS_BODY = {
            }
 vuma = VumaSMS(API_TOKEN,API_SECRET)
 print vuma.send_sms(SMS_BODY)
+```
