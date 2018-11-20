@@ -1,5 +1,7 @@
+from vumasms.VumaSMS import VumaSMS
+
 API_TOKEN = "<from vuma portal>";
-API_SECRET = "<from vuma portal>"
+API_SECRET = "2222222233333333"
 SMS_BODY = { 
              "to":["254723681977"],
              "sender":"VUMA",

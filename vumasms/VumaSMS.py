@@ -8,7 +8,7 @@ from Crypto.Cipher import AES
 
 class VumaSMS:
 	 _url = "https://www.vumasms.com/api/send/sms"
-	 iv = Random.new().read(AES.block_size)
+	 iv = Random.new().read(AES.block_size)	
     
 	 def __init__(self, token, secret):
 	 	self.token = token
@@ -21,7 +21,6 @@ class VumaSMS:
 	 def _payload(self):
 	 	self._boundary = "----VumaApiKitFormBoundary"+self.encode(self.secret)
 	 	payload = "--"+self._boundary+"\r\nContent-Disposition: form-data; name=\"payload\"\r\n\r\n"+json.dumps(self.payload)+"\r\n--"+self._boundary+"--"
-	 	print payload
 	 	return payload
 
 	 def _headers(self):
