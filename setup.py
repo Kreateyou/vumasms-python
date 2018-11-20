@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(name='vumasms',
-      version='0.1',
+      version='0.2',
       description='VumaSMS REST API client for Python. API support for bulk SMS, Numbers, Verify (2FA) and more.',
       url='https://github.com/Kreateyou/vumasms-python.git',
       author='VumaSMS Team',
